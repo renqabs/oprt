@@ -55,7 +55,6 @@ def proxy(path):
 
     # Get API keys and select a random one if available
     api_keys = get_api_keys()
-    print(api_keys)
     if api_keys:
         random_key = random.choice(api_keys)
         headers['Authorization'] = f"Bearer {random_key}"
